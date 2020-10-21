@@ -1,0 +1,23 @@
+{
+  "name": "discordfilebot",
+  "version": "1.0.0",
+  "description": "Discord file-serving bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonybench/DiscordFileBot.git"
+  },
+  "author": "Isaac Yep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonybench/DiscordFileBot/issues"
+  },
+  "homepage": "https://github.com/anthonybench/DiscordFileBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.0",
+    "eslint": "^7.11.0"
+  }
+}
