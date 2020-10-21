@@ -10,7 +10,7 @@ An in-chat file serving bot for Discord
 ### Welcome to DiscordFileBot!
 <hr>
 
-This ~ooo~
+This repository contains my scaffolding for a Discord chat-bot application named FileBot (@filebot). The bot will manage the text channels detailed in *Get Started* and *Usage*, and use those different channels to act as an on-demand file server, without polluting the server with pinned messages or a scaling demand for file storage on the server. The files served can be tailored by the implementation, and the following document will exhibit mine.
 
 <br />
 
@@ -31,6 +31,7 @@ This ~ooo~
 <hr>
 
 ~ooo~
+- add `config.json` and populate with the following...
 
 <br />
 
@@ -44,23 +45,22 @@ This ~ooo~
 ### Technologies 🧰
 <hr>
 
-  - [flip.js](https://google.com)
-  - [flop.js](https://google.com)
-  - [flap.js](https://google.com)
+  - [Discord.js](https://discord.js.org/#/)
+  - [ESLint.js](https://eslint.org/)
 
 <br />
 
 ### Contribute 🤝
 <hr>
 
-~ooo~
+I am not currently evaluating pull requests for merging, but would gladly accept feedback from any savy Discord Bot developers!
 
 <br />
 
 ### Acknowledgements 💙
 <hr>
 
-~ooo~
+Thanks to my girlfriend Jean, for helping me test this Bot on my testing server across its target channels. Certainly worth mentioning, the Discord.js docs contains a [guide]() that's terrific! I originally wrote bots with a rapid development template that made feature implementation rigid, only to later realize that writing it from the ground up is fun and welll-documented!
 
 <br />
 
@@ -71,10 +71,12 @@ This ~ooo~
 
 <!-- badge cluster -->
 
-[~ooo~](https://shields.io/)
+![GitHub](https://img.shields.io/github/license/anthonybench/DiscordFileBot) ![GitHub top language](https://img.shields.io/github/languages/top/anthonybench/DiscordFileBot) ![GitHub repo size](https://img.shields.io/github/repo-size/anthonybench/DiscordFileBot) 
+
+Discord.js ![npm](https://img.shields.io/npm/v/discord.js)
 
 <!-- / -->
-See [License](https://google.com) for the full license text.
+See [License](https://opensource.org/licenses/MIT) for the full license text.
 
 This repository was authored by *Isaac Yep*.
 
