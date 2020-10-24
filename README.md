@@ -30,8 +30,51 @@ This repository contains my scaffolding for a Discord chat-bot application named
 ### Get Started 🚀
 <hr>
 
-~ooo~
-- add `config.json` and populate with the following...
+First thing's first, make sure you have already initialized the working directory as a `Node` applicaiton:
+```bash
+npm init
+```
+
+feel free to run `npm install`, else here are the two dependancies for **FileBot**:
+```bash
+npm install discord.js
+npm install eslint
+```
+
+Navigate to `~/eslintrc.json` to enforce your own code styles by the appending the *rules* object:
+```json
+{
+	"extends": "eslint:recommended",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2019
+	},
+	"rules": {
+
+	}
+}
+```
+
+If you haven't already, create the application and add it as a bot at the [Discord Developer Portal](https://discord.com/developers/applications/) and retrieve your bot token.
+
+
+Place the token, and whatever in-chat prefix you wish to address the bot with in `~/config.json`
+```json
+{
+    "prefix" : "<prefered_wake_signature_here>",
+    "token" : "<bot_token_here"
+}
+```
+
+Try running your bot and look for "ready!" logged to your runtime console:
+```bash
+node .
+```
+
+If you would like to add new commands, see NewCommand.md for tailoring this bot to suit your specific application.
 
 <br />
 
