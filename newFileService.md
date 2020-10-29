@@ -1,12 +1,24 @@
+# How to Add a New Command
+
+
+If you want to add `new file service` to this bot, make a new subdirectory in `files/` named after the file it maintains versions of, say for instance *dontStarve*, followed by "-v" and the version number. <br />
+
+```
+files/dontStarve/dontStarve-v1.txt
+```
+
+You can keep versions this way for archival. Then, add a new command such as `commands/dontStarve.js` and paste the following code with your subdirectory name placed int it:
+
+```Javascript
 const Discord = require('discord.js');
 const fs = require('fs');
 
-let fileRootName = 'test'; // Enter subdirectory name here
+let fileRootName = 'dontStarve'; // Enter subdirectory name here.
 let pathBase = './files/' + fileRootName + '/';
 
 module.exports = {
     name: 'test',
-    description: 'This is a demonstrational stub for your implementation',
+    description: 'This serves the file for which this file is named after',
     execute(message, args) {
 
         if (args.length) {
@@ -38,3 +50,4 @@ module.exports = {
 
     }
 };
+```

@@ -74,14 +74,48 @@ Try running your bot and look for "ready!" logged to your runtime console:
 node .
 ```
 
-If you would like to add new commands, see NewCommand.md for tailoring this bot to suit your specific application.
+Adding new file services is easy, just hop on over to newFileService.md, or take a look at `commands/test.js`.
+If you would like to add other new utility commands, see newCommand.md for tailoring this bot to suit your specific application.
 
 <br />
 
 ### Usage ⚙
 <hr>
 
-~ooo~
+Before the file service is covered, there are a few utility commands this bot has that a *server admin* might find useful.
+
+You can display the avatars of any string of *mentioned* server members in one message:
+```
+!avatar @SleepyBoy @AwakeyGirl
+```
+
+Or just the callers avatar:
+```
+!avatar
+```
+
+You can get server details with:
+```
+!server
+```
+
+And you can delete any number of previous messages in the current channel swiftly, provided they are less than two weeks old (server admin only):
+```
+!prune 4
+```
+
+Now onto the file service!
+For a given file you want to maintain versions of and have on demand, you simply follow the short list of steps in newFileService.md, and you can request any version of a file simply with:
+```
+!haikus -2
+```
+which would have **FileBot** serve you *haikus-v2.txt*, presumably.
+
+If you simply want the latest version, just don't include the version number:
+```
+!haikus
+```
+which would return the latest version, say *haikus-v4.txt*. This service works for any file extension.
 
 <br />
 
@@ -90,6 +124,7 @@ If you would like to add new commands, see NewCommand.md for tailoring this bot 
 
   - [Discord.js](https://discord.js.org/#/)
   - [ESLint.js](https://eslint.org/)
+  - [Node File System](https://nodejs.org/api/fs.html)
 
 <br />
 
